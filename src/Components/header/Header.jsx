@@ -13,7 +13,7 @@ export default class Header extends Component {
             <div>
                 
                 <p>
-                    <span>Shbab Btsad Shbab</span>
+                    <span>Shbab Btsa'd Shbab </span>
                     is a youth-led organization that helps young 
                     people find educational and 
                     career opportunities.

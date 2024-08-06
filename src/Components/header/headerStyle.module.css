@@ -50,17 +50,18 @@ header div h6 {
 }
 
 .buttons{
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     height: 100px;
     padding-top: 40px;
 }
 
 .buttons img {
-    width: 184.5px;
-    height: 60px;
+    width: 150px;
+    height: 50px;
 }
 
 header img {

@@ -1,87 +1,83 @@
-import '../style.module.css'
-import style from '../style.module.css';
-import FB from '../icons/Facebook.png'
-import IG from '../icons/Instagram.png'
-import LI from '../icons/Linkedin.png'
-
+import '../style.css';
+import parse from 'html-react-parser';
 const Board = () => {
+  let board = [
+    {
+      gender: "girl",
+      name: "Shahd Nooh",
+      title: "CEO",
+      facebook: "",
+      inastagram: "",
+      linkedin: "",
+  },
+  {
+    gender: "boy",
+    name: "Mohsen El Sayed",
+    title: "Chairman",
+    facebook: "",
+    inastagram: "",
+    linkedin: "",
+},
+{
+  gender: "girl",
+  name: "Sama Nooh",
+  title: "V.CEO",
+  facebook: "",
+  inastagram: "",
+  linkedin: "",
+},
+{
+  gender: "girl",
+  name: "Radwa El Gendy",
+  title: "COO",
+  facebook: "",
+  inastagram: "",
+  linkedin: "",
+},
+{
+  gender: "girl",
+  name: "Salma Ahmed",
+  title: "CCO",
+  facebook: "",
+  inastagram: "",
+  linkedin: "",
+},
+{
+  gender: "girl",
+  name: "Nour Ahmed",
+  title: "CAO",
+  facebook: "",
+  inastagram: "",
+  linkedin: "",
+}
+];
+var boardTeam = "";
+board.forEach((member) => {
+      let member_card = `
+        <div className="card">
+          <div className="${member.gender}">
+            <img src="" alt=""/>
+          </div>
+          <p className="title">${member.title}</p>
+          <h3 className="name">${member.name}</h3>
+          <div className="social">
+            <a href="${member.facebook}"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="${member.inastagram}"><i class="fa-brands fa-instagram"></i></a>
+            <a href="${member.linkedin}"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      `;
+      console.log(member_card);
+      boardTeam += member_card ;
+    })
   return (
     <>
-      <section class={style.team}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" / >
+      <section className="team">
         <h1>Shbab Btsad Shbab <span>Board</span></h1>
-        <div class={style.cards} id="Board">
-          <div class={style.card}>
-            <div class={style.girl}>
-            <img src="" alt="" />
-          </div>
-          <p class={style.title}>CEO</p>
-          <h3 class={style.name}>Shahd Nooh</h3>
-          <div class={style.social}>
-            <a href=""><img src={FB} alt="" /></a>
-            <a href=""><img src={IG} alt="" /></a>
-            <a href=""><img src={LI} alt="" /></a>
-          </div>
-        </div>
-          <div class={style.card}>
-            <div class={style.boy}>
-            <img src="" alt="" />
-          </div>
-          <p class={style.title}>Chairman</p>
-          <h3 class={style.name}>Mohsen El Sayed</h3>
-          <div class={style.social}>
-            <a href=""><img src={FB} alt="" /></a>
-            <a href=""><img src={IG} alt="" /></a>
-            <a href=""><img src={LI} alt="" /></a>
-          </div>
-        </div>
-          <div class={style.card}>
-            <div class={style.girl}>
-            <img src="" alt="" />
-          </div>
-          <p class={style.title}>V.CEO</p>
-          <h3 class={style.name}>Sama Nooh</h3>
-          <div class={style.social}>
-            <a href=""><img src={FB} alt="" /></a>
-            <a href=""><img src={IG} alt="" /></a>
-            <a href=""><img src={LI} alt="" /></a>
-          </div>
-        </div>
-          <div class={style.card}>
-            <div class={style.girl}>
-            <img src="" alt="" />
-          </div>
-          <p class={style.title}>COO</p>
-          <h3 class={style.name}>Radwa El Gendy</h3>
-          <div class={style.social}>
-            <a href=""><img src={FB} alt="" /></a>
-            <a href=""><img src={IG} alt="" /></a>
-            <a href=""><img src={LI} alt="" /></a>
-          </div>
-        </div>
-          <div class={style.card}>
-            <div class={style.girl}>
-            <img src="" alt="" />
-          </div>
-          <p class={style.title}>CCO</p>
-          <h3 class={style.name}>Salma Ahmed</h3>
-          <div class={style.social}>
-            <a href=""><img src={FB} alt="" /></a>
-            <a href=""><img src={IG} alt="" /></a>
-            <a href=""><img src={LI} alt="" /></a>
-          </div>
-        </div>
-          <div class={style.card}>
-            <div class={style.girl}>
-            <img src="" alt="" />
-          </div>
-          <p class={style.title}>CAO</p>
-          <h3 class={style.name}>Nour Ahmed</h3>
-          <div class={style.social}>
-            <a href=""><img src={FB} alt="" /></a>
-            <a href=""><img src={IG} alt="" /></a>
-            <a href=""><img src={LI} alt="" /></a>
-          </div>
-        </div>
+        <div className="cards" id="Board">
+        
+        {parse(boardTeam)}
       </div>
     </section >
     </>

@@ -1,103 +1,97 @@
-import '../style.module.css'
-import style from '../style.module.css';
-import FB from '../icons/Facebook.png'
-import IG from '../icons/Instagram.png'
-import LI from '../icons/Linkedin.png'
-
+import '../style.css';
+import parse from 'html-react-parser';
 const Leaders = () => {
-  return (
-    <>
-      <section class={style.team}>
-        <h1>Shbab Btsad Shbab <span>Leaders</span></h1>
-        <div class={style.cards} id="leaders">
-          <div class={style.card}>
-            <div class={style.boy}>
-              <img src="" alt="" />
-            </div>
-            <p class={style.title}>Head Of HR</p>
-            <h3 class={style.name}>Omar Mohamed</h3>
-            <div class={style.social}>
-              <a href=""><img src={FB} alt="" /></a>
-              <a href=""><img src={IG} alt="" /></a>
-              <a href=""><img src={LI} alt="" /></a>
-            </div>
+  let leaders = [
+    {
+      gender: "boy",
+      name: "Omar Mohamed",
+      title: "Head Of HR",
+      facebook: "",
+      inastagram: "",
+      linkedin: "",
+  },
+  {
+    gender: "girl",
+    name: "Sara Eid",
+    title: "Head Of Marketing",
+    facebook: "",
+    inastagram: "",
+    linkedin: "",
+},
+{
+  gender: "boy",
+  name: "Mohamed Tamer",
+  title: "Head Of Content",
+  facebook: "",
+  inastagram: "",
+  linkedin: "",
+},
+{
+  gender: "girl",
+  name: "Lama Mohamed",
+  title: "Head Of PR",
+  facebook: "",
+  inastagram: "",
+  linkedin: "",
+},
+{
+  gender: "boy",
+  name: "Mina Bishoy",
+  title: "Head Of Creative",
+  facebook: "",
+  inastagram: "",
+  linkedin: "",
+},
+{
+  gender: "girl",
+  name: "Huda El Gendy",
+  title: "Head Of Telegram",
+  facebook: "",
+  inastagram: "",
+  linkedin: "",
+},
+{
+  gender: "boy",
+  name: "Zeyad Emad",
+  title: "Head Of Web",
+  facebook: "",
+  inastagram: "",
+  linkedin: "",
+}
+];
+var leadersTeam = "";
+leaders.forEach((member) => {
+      let member_card = `
+        <div className="card">
+          <div className="${member.gender}">
+            <img src="" alt=""/>
           </div>
-          <div class={style.card}>
-            <div class={style.girl}>
-              <img src="" alt="" />
-            </div>
-            <p class={style.title}>Head Of Marketing</p>
-            <h3 class={style.name}>Sara Eid</h3>
-            <div class={style.social}>
-              <a href=""><img src={FB} alt="" /></a>
-              <a href=""><img src={IG} alt="" /></a>
-              <a href=""><img src={LI} alt="" /></a>
-            </div>
-          </div>
-          <div class={style.card}>
-            <div class={style.boy}>
-              <img src="" alt="" />
-            </div>
-            <p class={style.title}>Head Of Content</p>
-            <h3 class={style.name}>Mohamed Tamer</h3>
-            <div class={style.social}>
-              <a href=""><img src={FB} alt="" /></a>
-              <a href=""><img src={IG} alt="" /></a>
-              <a href=""><img src={LI} alt="" /></a>
-            </div>
-          </div>
-          <div class={style.card}>
-            <div class={style.girl}>
-              <img src="" alt="" />
-            </div>
-            <p class={style.title}>Head Of PR</p>
-            <h3 class={style.name}>Lama Mohamed</h3>
-            <div class={style.social}>
-              <a href=""><img src={FB} alt="" /></a>
-              <a href=""><img src={IG} alt="" /></a>
-              <a href=""><img src={LI} alt="" /></a>
-            </div>
-          </div>
-          <div class={style.card}>
-            <div class={style.boy}>
-              <img src="" alt="" />
-            </div>
-            <p class={style.title}>Head Of Creative</p>
-            <h3 class={style.name}>Mina Bishoy</h3>
-            <div class={style.social}>
-              <a href=""><img src={FB} alt="" /></a>
-              <a href=""><img src={IG} alt="" /></a>
-              <a href=""><img src={LI} alt="" /></a>
-            </div>
-          </div>
-          <div class={style.card}>
-            <div class={style.girl}>
-              <img src="" alt="" />
-            </div>
-            <p class={style.title}>Head Of Telegram</p>
-            <h3 class={style.name}>Huda El Gendy</h3>
-            <div class={style.social}>
-              <a href=""><img src={FB} alt="" /></a>
-              <a href=""><img src={IG} alt="" /></a>
-              <a href=""><img src={LI} alt="" /></a>
-            </div>
-          </div>
-          <div class={style.card}>
-            <div class={style.boy}>
-              <img src="" alt="" />
-            </div>
-            <p class={style.title}>Head Of Web</p>
-            <h3 class={style.name}>Zeyad Emad</h3>
-            <div class={style.social}>
-              <a href=""><img src={FB} alt="" /></a>
-              <a href=""><img src={IG} alt="" /></a>
-              <a href=""><img src={LI} alt="" /></a>
-            </div>
+          <p className="title">${member.title}</p>
+          <h3 className="name">${member.name}</h3>
+          <div className="social">
+            <a href="${member.facebook}"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="${member.inastagram}"><i class="fa-brands fa-instagram"></i></a>
+            <a href="${member.linkedin}"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
         </div>
-      </section>
+      `;
+      console.log(member_card);
+      leadersTeam += member_card ;
+    })
+  return (
+    <>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" / >
+      <section className="team">
+        <h1>Shbab Btsad Shbab <span>leaders</span></h1>
+        <div className="cards" id="leaders">
+        
+        {parse(leadersTeam)}
+      </div>
+    </section >
     </>
+    
   )
+  
 }
 
 export default Leaders

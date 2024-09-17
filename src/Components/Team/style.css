@@ -121,12 +121,19 @@ body{
             }
             .social{
                 margin: auto 15px 0 15px;
-
                 display: flex;
                 gap: 20px;
                 margin-top: 20px;
-                img{
+                a{
+                    color: var(--girl-color);
+                    text-decoration: none;
                     width: 40px;
+                    aspect-ratio: 1/1;
+                    display: grid;
+                    place-items: center;
+                    i{
+                        font-size: 30px;
+                    }
                 }
             }
             

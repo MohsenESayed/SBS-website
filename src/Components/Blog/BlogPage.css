@@ -11,6 +11,8 @@
 }
 body{
     font-family: var(--main-font);
+    background: linear-gradient(to right, #fad0c4c2 0%, #312a6c79 100%);
+
     div{
         padding: 0;
         margin: 0;
@@ -82,72 +84,6 @@ body{
                     height: 100%;
                     object-fit: cover;
                     border-radius: inherit;
-                }
-            }
-        }
-    }
-}
-.footer{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    font-family: var(--footer-font);
-    .social{
-        width: 90%;
-        border-bottom: 1px solid #1e1e1e;
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
-        padding: 0 5px 10px;
-        color: #4f4f4f;
-        .text{
-            font-size:clamp(12.5px , 1.5vw , 20px);
-            .bold{
-                font-weight: bold;
-            }
-        }
-        .links{
-            display: flex;
-            gap: 15px;
-            a{  
-                position: relative;
-                min-height:clamp(35px , 5vw , 50px);
-                display: grid;
-                place-items: center;
-                color: #000;
-                aspect-ratio: 1/1;
-                text-decoration: none;
-                border-radius: 50%;
-                border: 2px solid var(--girl-color);
-                overflow: hidden;
-                &::before{
-                    content: "";
-                    position: absolute;
-                    top: 100%;
-                    right: 100%;
-                    bottom: 0;
-                    left: 0;
-                    border-radius: 50%;
-                    z-index: -1;
-                    background-color: var(--girl-color);
-                    transition: .3s ease-in-out;
-                }
-                &:hover{
-                    &::before{
-                        top: 0;
-                        right: 0;
-                    }
-                    i{
-                        color: white;
-                        transition-delay: .3s;
-
-                    }
-                }
-                i{
-                    color: #000;
-                    font-size:  clamp(20px , 1.5vw , 30px) ;
-                    transition: .2s linear;
                 }
             }
         }

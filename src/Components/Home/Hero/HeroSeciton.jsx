@@ -6,7 +6,7 @@ import buttonGoogle from "../../../public/icons/button-google-play.svg.png";
 const HeroSeciton = () => {
   return (
     <>
-      <header>
+      <header className={style.hero}>
         <div>
           <p>
             <span>Shbab Btsad Shbab</span>

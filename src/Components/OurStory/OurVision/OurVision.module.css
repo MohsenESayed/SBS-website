@@ -1,0 +1,48 @@
+.visionContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 250px 10px;
+    position: relative;
+    overflow: hidden; 
+  }
+  
+  .visionImageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .visionImage {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .visionContent {
+    padding-left: 500px
+  }
+  
+  .visionTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 64px;
+    color: #EE7D71; 
+    margin-bottom: 25px;
+  }
+  
+  .visionItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  
+
+  
+  .visionText {
+    font-size: 40px;
+    line-height: 1.5;
+    color: #333;
+  }
+  

@@ -108,17 +108,6 @@ events.forEach((event , i) =>{
     <h1>Go to top</h1>
     </div>
     </section>
-    <footer className="footer">
-      <div className="social">
-        <p className="text"><span className="bold">Follow our social media accounts:</span> @shbab btsad shbab</p>
-        <div className="links">
-          <a href="https://www.facebook.com/shbab.btsad.shbab"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.linkedin.com/company/shbab-btsad-shbab-in/"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://www.instagram.com/shbab_btsad_shbab/"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-      </div>
-      <p>&copy; 2024 SBS. All Rights Reserved.</p>
-    </footer>
     </>
   )
 }

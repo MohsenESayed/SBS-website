@@ -1,0 +1,25 @@
+.missionSection {
+    margin-top: 70px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 180PX;
+  }
+  
+  .missionTitle {
+    color: #EE7D71;
+    font-weight: 400;
+    margin-bottom: 70px;
+    font-size: 64px;
+  }
+  
+  .missionText {
+    color: #333;
+    font-size: 40px;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  

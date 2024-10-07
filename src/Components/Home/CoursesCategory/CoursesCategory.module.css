@@ -35,5 +35,12 @@ span{
     padding: 1.5em;
     align-items: center;
     margin: 2em;
+    transition: all 0.3s ease;
 }
 
+
+.card:hover{
+    min-width:18em;
+    height: 16em;
+    margin-top: 1em;
+}

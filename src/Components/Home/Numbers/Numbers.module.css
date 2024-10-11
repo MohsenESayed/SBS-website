@@ -1,0 +1,45 @@
+.container{
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #fce8e8 0%, #cd9cb9 100%);
+  
+}
+
+
+.box{
+
+    display: flex;
+}
+
+
+.card{
+    text-align: center;
+    width: 12em;
+    height: 12em;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+.card h1 ,.card p {
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+.card:hover {
+    width: 15em;
+    height: 15em;
+        background-color: rgba(0, 0, 0,0.03);
+
+}

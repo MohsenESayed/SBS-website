@@ -6,7 +6,7 @@ import Home from "./Components/Home/Home.jsx";
 import OurStory from "./Components/OurStory/OurStory.jsx";
 // import Projects from "./Components/Projects/Projects.jsx";
 import Team from "./Components/Team/Team.jsx";
-// import Contact from "./Components/Contact/Contact.jsx";
+import Contact from "./Components/Contact/ContactPage.jsx";
 import BlogPage from "./Components/Blog/BlogPage.jsx";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         {/* <Route path="/projects" element={<Projects />} /> */}
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/team" element={<Team />} />
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

@@ -1,0 +1,75 @@
+.AchievementHeader{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 2em;
+}
+
+.achievementContainer{
+    width:100% ;
+    /* padding: 2em; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.achievementContainer img {
+    width: calc(37% + 3em);
+    height: calc(37% + 3em);
+}
+.achievementCards{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.achievementTitle{
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 300;
+}
+.achievementTitle span{
+    display: block;
+    margin-top: -.5em;
+    margin-bottom: -0.6em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.achievementNumbers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievementCardOne{
+    display: flex;
+    width: 110%;
+    justify-content: space-between;
+}
+.achievementCardOne h5 {
+    text-align: center;
+    font-size: 2em;
+    margin: 1em;
+    font-weight: 300;
+}
+.achievementCardOne h5 span{
+    
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+.achievementCardTwo{
+   border-top: solid black 1px; 
+}
+
+.colorOne{
+
+    color: #f08c7e;
+}
+.colorTwo{
+
+    color: #87baba;
+}

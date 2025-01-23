@@ -40,6 +40,6 @@
 .card:hover {
     width: 15em;
     height: 15em;
-        background-color: rgba(0, 0, 0,0.03);
+        background-color: rgba(0, 0, 0,0.05);
 
 }

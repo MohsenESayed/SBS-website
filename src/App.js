@@ -1,28 +1,32 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./Components/Header/Header.jsx";
-import Footer from "./Components/Footer/Footer.jsx";
-import Home from "./Components/Home/Home.jsx";
-import OurStory from "./Components/OurStory/OurStory.jsx";
-// import Projects from "./Components/Projects/Projects.jsx";
-import Team from "./Components/Team/Team.jsx";
-import Contact from "./Components/Contact/ContactPage.jsx";
-import BlogPage from "./Components/Blog/BlogPage.jsx";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Header from "./Components/Header/Header.jsx";
+// import Footer from "./Components/Footer/Footer.jsx";
+// import Home from "./Components/Home/Home.jsx";
+// import OurStory from "./Components/OurStory/OurStory.jsx";
+// // import Projects from "./Components/Projects/Projects.jsx";
+// import Team from "./Components/Team/Team.jsx";
+// import Contact from "./Components/Contact/ContactPage.jsx";
+// import BlogPage from "./Components/Blog/BlogPage.jsx";
+import NewHome from "./Components/NewHome/NewHome.jsx";
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/our-story" element={<OurStory />} />
-        {/* <Route path="/projects" element={<Projects />} /> */}
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
-    </Router>
+    // <Router>
+    //   <Header />
+    //   <Routes>
+    //     <Route path="/" element={<Home />} />
+    //     <Route path="/our-story" element={<OurStory />} />
+    //     {/* <Route path="/projects" element={<Projects />} /> */}
+    //     <Route path="/blog" element={<BlogPage />} />
+    //     <Route path="/team" element={<Team />} />
+    //     <Route path="/contact" element={<Contact />} />
+    //   </Routes>
+    //   <Footer />
+    // </Router>
+
+
+    <NewHome/>
   );
 }
 

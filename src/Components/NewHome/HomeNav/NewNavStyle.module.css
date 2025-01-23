@@ -1,0 +1,53 @@
+header {
+    width: 100%;
+    min-height: 80px;
+    background-color: #f7c5be;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    
+}
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 35%;
+}
+li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 400;
+    color:#000000;
+}
+
+.buttons{
+    display: flex;
+    width: 30%;
+    
+}
+
+.button {
+    border-radius: 50px;
+     margin: 20px;
+     height: 50px;
+     font-size: 1.2em;
+     padding: 10px;
+   
+    min-width: 140px
+    
+}
+
+.buttonOne{
+    background-color: #ffffff;
+    color:#f7c5be ;
+}
+.buttonTwo{
+    background-color: #000000;
+    color:#ffffff ;
+}

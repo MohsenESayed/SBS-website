@@ -1,0 +1,135 @@
+.contactContainer{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: space-around;
+}
+.contactContainer img{
+    width: 40%;
+    height: 50%;
+}
+.downloadApp{
+    text-align: center;
+}
+.downloadApp img{
+    width: 9em;
+    height: 3em;
+}
+.followUs{
+    text-align: center;
+    font-size: 7em;
+    line-height: 1.5em;
+    letter-spacing: 10px;
+}
+
+.socialMedia {
+    margin: 5%;
+    width: 90%;
+    box-shadow: 0px 0px 33px 8px rgba(0, 0, 0, 0.34);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.socialMediaRow {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    margin: 10px 0;
+}
+
+.socialMediaRow a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px;
+    border: 2px dashed #98d5e1;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.socialMediaRow a:hover {
+    background: rgba(152, 213, 225, 0.2);
+}
+
+.socialMediaRow i {
+    font-size: 1.5em;
+    color: #f4897a;
+}
+
+
+
+
+
+
+.footer {
+    background: #f4897a;
+    padding: 50px 0 20px;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 50px;
+}
+
+.footer .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer .socialIcons i {
+    font-size: 1.5em;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer .socialIcons i:hover {
+    transform: scale(1.2);
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.footerLinks a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footerLinks a:hover {
+    color: #98d5e1;
+}
+
+.footerWave {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+}
+
+.footerWave img {
+    width: 100%;
+}

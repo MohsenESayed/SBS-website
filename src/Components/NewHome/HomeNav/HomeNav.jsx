@@ -5,7 +5,7 @@ import logo from './logo.png'
 export default function HomeNav() {
   return (
     <>
-      <header>
+      <div className={style.headerrrrr}>
         <img src={logo} alt='logo'/>
 
         <ul>
@@ -19,7 +19,7 @@ export default function HomeNav() {
             <button className={`${style.button} ${style.buttonTwo}`}>التسجيل </button>
             
         </div>
-      </header>
+      </div>
     </>
   )
 }

@@ -35,10 +35,10 @@ export default class HomeContact extends Component {
           <img src={phone} alt="Mobile App" />
         </div>
 
-        <h1 className={style.followUs}>
+        {/* <h1 className={style.followUs}>
           تابعونا
           <br /> علي
-        </h1>
+        </h1> */}
 
         <div className={style.socialMedia}>
           <div className={style.socialMediaRow}>
